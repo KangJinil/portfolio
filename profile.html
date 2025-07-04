@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이력서 - 진일의 포트폴리오</title>
+    <meta name="description" content="강진일의 상세 이력서 - 경력, 학력, 자격증, 수상내역">
+    <meta name="keywords" content="강진일, 이력서, 경력, 학력, 자격증, 수상내역">
+    <meta name="author" content="강진일">
+    
+    <!-- Bootstrap 5.3 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    
+    <style>
+        body {
+            font-family: 'Noto Sans KR', 'Roboto', Arial, sans-serif;
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 50px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .profile-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0 40px;
+        }
+        
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            margin: 0 auto 20px;
+            display: block;
+        }
+        
+        .timeline-item {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 12px;
+            width: 2px;
+            height: calc(100% + 18px);
+            background: #e9ecef;
+        }
+        
+        .timeline-item:last-child::after {
+            display: none;
+        }
+        
+        .certificate-card {
+            transition: transform 0.3s ease;
+        }
+        
+        .certificate-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .certificate-icon {
+            width: 100%;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 8px 8px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">강진일</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">홈</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="profile.html">이력서</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">프로젝트</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">기술스킬</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="activities.html">강의/저서</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">연락처</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Header -->
+    <section class="profile-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-5 fw-bold mb-3">강진일</h1>
+                    <p class="lead mb-2">Three Quathers Stack Developer</p>
+                    <p class="mb-3">Smart Factory, ERP, IoT, Mobile, AI 분석/설계/개발</p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge bg-light text-dark">1982-07-23</span>
+                        <span class="badge bg-light text-dark">010-6767-0950</span>
+                        <span class="badge bg-light text-dark">kangji0950@gmail.com</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <img src="images/profile.png" alt="강진일 프로필" class="profile-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="py-5">
+        <div class="container">
+            <!-- Work Experience -->
+            <section class="mb-5">
+                <h2 class="section-title">경력사항</h2>
+                <div class="timeline-item">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h5 class="text-primary">코아시스템</h5>
+                                    <p class="text-muted">차장</p>
+                                    <p class="text-muted">2017 - 2025</p>
+                                </div>
+                                <div class="col-md-9">
+                                    <ul class="list-unstyled">
+                                        <li><i class="bi bi-check-circle text-success me-2"></i>Smart Factory, ERP, IoT, Mobile, AI 분석/설계/개발</li>
+                                        <li><i class="bi bi-check-circle text-success me-2"></i>Google Cloud AppSheet 공인강사로 세미나/교육 강사 활동</li>
+                                        <li><i class="bi bi-check-circle text-success me-2"></i>'AppSheet 예제로 비즈니스 앱 쉽게 만들기' 저서</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h5 class="text-primary">콜라보</h5>
+                                    <p class="text-muted">대리</p>
+                                    <p class="text-muted">2013 - 2017</p>
+                                </div>
+                                <div class="col-md-9">
+                                    <ul class="list-unstyled">
+                                        <li><i class="bi bi-check-circle text-success me-2"></i>Konan Search4 검색엔진 통합검색, 표절검사 시스템 개발</li>
+                                        <li><i class="bi bi-check-circle text-success me-2"></i>IBM Lotus Notes Groupware 개발</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h5 class="text-primary">에스피에스</h5>
+                                    <p class="text-muted">주임</p>
+                                    <p class="text-muted">2006 - 2012</p>
+                                </div>
+                                <div class="col-md-9">
+                                    <ul class="list-unstyled">
+                                        <li><i class="bi bi-check-circle text-success me-2"></i>E-Zone, K-Zone ERP 관리</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section class="mb-5">
+                <h2 class="section-title">학력사항</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow h-100">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">경희사이버대학교</h5>
+                                <p class="card-text">컴퓨터정보통신학과</p>
+                                <p class="text-muted">2023 - 재학중</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow h-100">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">부산과학기술대학교</h5>
+                                <p class="card-text">인터넷정보처리학과</p>
+                                <p class="text-muted">2005 - 2007 (학점: 4.21)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certificates -->
+            <section class="mb-5">
+                <h2 class="section-title">자격증</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card certificate-card border-0 shadow h-100">
+                            <div class="certificate-icon">
+                                <i class="bi bi-patch-check display-1 text-primary"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">정보처리기사</h5>
+                                <p class="card-text text-muted">자격번호: 13202170187Z</p>
+                                <p class="card-text text-muted">취득일: 2013-08-16</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card certificate-card border-0 shadow h-100">
+                            <div class="certificate-icon">
+                                <i class="bi bi-calculator display-1 text-success"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">전자계산기기능사</h5>
+                                <p class="card-text text-muted">자격번호: 00405212610L</p>
+                                <p class="card-text text-muted">취득일: 2000-07-18</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card certificate-card border-0 shadow h-100">
+                            <div class="certificate-icon">
+                                <i class="bi bi-cpu display-1 text-info"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">정보처리기능사</h5>
+                                <p class="card-text text-muted">자격번호: 99407033637N</p>
+                                <p class="card-text text-muted">취득일: 1999-12-29</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Awards -->
+            <section class="mb-5">
+                <h2 class="section-title">수상내역</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow h-100">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-trophy text-warning display-6 me-3"></i>
+                                    <div>
+                                        <h5 class="card-title mb-1">벤처기업협회 표창장</h5>
+                                        <p class="text-muted mb-0">제 2021-349호</p>
+                                    </div>
+                                </div>
+                                <p class="card-text">2021년 12월 14일</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow h-100">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-award text-success display-6 me-3"></i>
+                                    <div>
+                                        <h5 class="card-title mb-1">코아시스템 성과우수상</h5>
+                                        <p class="text-muted mb-0">제 2024-005호</p>
+                                    </div>
+                                </div>
+                                <p class="card-text">2024년 2월 25일</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Download Resume -->
+            <section class="text-center">
+                <div class="card border-0 shadow">
+                    <div class="card-body py-5">
+                        <h3 class="mb-4">이력서 다운로드</h3>
+                        <p class="text-muted mb-4">PDF 형식의 상세 이력서를 다운로드하실 수 있습니다.</p>
+                        <a href="resume/이력서_강진일.pdf" class="btn btn-primary btn-lg" download>
+                            <i class="bi bi-download me-2"></i>이력서 다운로드
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 강진일. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
