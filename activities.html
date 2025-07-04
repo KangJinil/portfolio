@@ -1,56 +1,144 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>강의/저서/외부활동 - 진일의 포트폴리오</title>
-    <meta name="description" content="강진일의 강의, 세미나, 저서, 외부활동 소개">
-    <meta name="keywords" content="강진일, 강의, 세미나, 저서, AppSheet, 외부활동">
-    <meta name="author" content="강진일">
-    <!-- Bootstrap 5.3 CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-    <style>
-        body { font-family: 'Noto Sans KR', 'Roboto', Arial, sans-serif; }
-        .navbar-brand { font-weight: 700; }
-        .section-title { position: relative; margin-bottom: 50px; }
-        .section-title::after { content: ''; position: absolute; bottom: -10px; left: 0; width: 60px; height: 3px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
-        .activity-img { width: 120px; height: 160px; object-fit: cover; border-radius: 8px; background: #e9ecef; }
-        .table thead th { background: #f8f9fa; }
-    </style>
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">강진일</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">홈</a></li>
-                    <li class="nav-item"><a class="nav-link" href="profile.html">이력서</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">프로젝트</a></li>
-                    <li class="nav-item"><a class="nav-link" href="skills.html">기술스킬</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="activities.html">강의/저서</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">연락처</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <main class="py-5" style="margin-top: 80px;">
-        <div class="container">
-            <h2 class="section-title">강의 / 저서 / 외부활동</h2>
-            <div class="row mb-5">
-                <div class="col-lg-3 text-center">
-                    <img src="images/appsheet.png" class="activity-img mb-2" alt="저서 표지">
-                    <div class="fw-bold">저서</div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>강의/저서/외부활동 - 진일의 포트폴리오</title>
+        <meta
+            name="description"
+            content="강진일의 강의, 세미나, 저서, 외부활동 소개"
+        />
+        <meta
+            name="keywords"
+            content="강진일, 강의, 세미나, 저서, AppSheet, 외부활동"
+        />
+        <meta name="author" content="강진일" />
+        <!-- Bootstrap 5.3 CDN -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Bootstrap Icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+        />
+        <style>
+            body {
+                font-family: "Noto Sans KR", "Roboto", Arial, sans-serif;
+            }
+            .navbar-brand {
+                font-weight: 700;
+            }
+            .section-title {
+                position: relative;
+                margin-bottom: 50px;
+            }
+            .section-title::after {
+                content: "";
+                position: absolute;
+                bottom: -10px;
+                left: 0;
+                width: 60px;
+                height: 3px;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            }
+            .activity-img {
+                width: 120px;
+                height: 160px;
+                object-fit: cover;
+                border-radius: 8px;
+                background: #e9ecef;
+            }
+            .table thead th {
+                background: #f8f9fa;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">강진일</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">홈</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="profile.html">이력서</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html"
+                                >프로젝트</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="skills.html">기술스킬</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="activities.html"
+                                >강의/저서</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">연락처</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-lg-9">
+            </div>
+        </nav>
+        <main class="py-5" style="margin-top: 80px">
+            <div class="container">
+                <h2 class="section-title">강의 / 저서 / 외부활동</h2>
+                <div class="row mb-5">
+                    <div class="col-lg-3 text-center">
+                        <img
+                            src="images/appsheet.png"
+                            class="activity-img mb-2"
+                            alt="저서 표지"
+                        />
+                        <div class="fw-bold">저서</div>
+                    </div>
+                    <div class="col-lg-9">
+                        <table class="table table-bordered align-middle">
+                            <thead>
+                                <tr>
+                                    <th>일자</th>
+                                    <th>제목/내용</th>
+                                    <th>장소/기관</th>
+                                    <th>ISBN</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2023-03-27</td>
+                                    <td>
+                                        'AppSheet 예제로 비즈니스 앱 쉽게
+                                        만들기' 저서
+                                    </td>
+                                    <td>영풍코리아</td>
+                                    <td>979-11-982445-9-8</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <h3 class="mb-3">강의 및 세미나</h3>
+                <div class="table-responsive">
                     <table class="table table-bordered align-middle">
                         <thead>
                             <tr>
@@ -61,84 +149,99 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>2023-03-27</td>
-                                <td>'AppSheet 예제로 비즈니스 앱 쉽게 만들기' 저서</td>
-                                <td>영풍코리아</td>
+                                <td>2023</td>
+                                <td>
+                                    김해시청 구글 클라우드 앱시트 초급과정 강사
+                                </td>
+                                <td>김해시청</td>
+                            </tr>
+                            <tr>
+                                <td>2023</td>
+                                <td>
+                                    인제대학교 인공지능 연계 콘텐츠 창작자
+                                    양성과정 강사
+                                </td>
+                                <td>인제대학교</td>
+                            </tr>
+                            <tr>
+                                <td>2023</td>
+                                <td>
+                                    KISTI AppSheet 구글 노코드 플랫폼 세미나
+                                    강사
+                                </td>
+                                <td>한국과학기술정보연구원</td>
+                            </tr>
+                            <tr>
+                                <td>2023</td>
+                                <td>
+                                    창원산업진흥원 디지털 콘텐츠 융합 지역맞춤형
+                                    기초교육 강사
+                                </td>
+                                <td>창원산업진흥원</td>
+                            </tr>
+                            <tr>
+                                <td>2023</td>
+                                <td>
+                                    울산정보산업진흥원
+                                    데이터크리에이터/메타버스크리에이터 양성과정
+                                    강사
+                                </td>
+                                <td>울산정보산업진흥원</td>
+                            </tr>
+                            <tr>
+                                <td>2022</td>
+                                <td>
+                                    대웅제약 AppSheet, Apps Script, RDBMS 연동
+                                    강사
+                                </td>
+                                <td>대웅제약</td>
+                            </tr>
+                            <tr>
+                                <td>2022</td>
+                                <td>
+                                    대구광역시교육청 예비 고 1 미래역량강화 캠프
+                                    운영 강사
+                                </td>
+                                <td>대구광역시교육청</td>
+                            </tr>
+                            <tr>
+                                <td>2022</td>
+                                <td>
+                                    Smart HACCP & Factory 냉온장고 온/습도 제어
+                                    App 시연 강사
+                                </td>
+                                <td>세미나</td>
+                            </tr>
+                            <tr>
+                                <td>2022</td>
+                                <td>
+                                    효성 TNS Google Cloud AppSheet Platform 개발
+                                    세미나 강사
+                                </td>
+                                <td>효성 TNS</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+                <div class="text-center mt-5">
+                    <p class="text-muted">
+                        더 많은 강의/세미나/저서 활동은 이력서 PDF에서 확인하실
+                        수 있습니다.
+                    </p>
+                    <a
+                        href="resume/이력서_강진일.pdf"
+                        class="btn btn-outline-primary"
+                        download
+                        ><i class="bi bi-download me-2"></i>이력서 다운로드</a
+                    >
+                </div>
             </div>
-            <h3 class="mb-3">강의 및 세미나</h3>
-            <div class="table-responsive">
-                <table class="table table-bordered align-middle">
-                    <thead>
-                        <tr>
-                            <th>일자</th>
-                            <th>제목/내용</th>
-                            <th>장소/기관</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>2023</td>
-                            <td>김해시청 구글 클라우드 앱시트 초급과정 강사</td>
-                            <td>김해시청</td>
-                        </tr>
-                        <tr>
-                            <td>2023</td>
-                            <td>인제대학교 인공지능 연계 콘텐츠 창작자 양성과정 강사</td>
-                            <td>인제대학교</td>
-                        </tr>
-                        <tr>
-                            <td>2023</td>
-                            <td>KISTI AppSheet 구글 노코드 플랫폼 세미나 강사</td>
-                            <td>한국과학기술정보연구원</td>
-                        </tr>
-                        <tr>
-                            <td>2023</td>
-                            <td>창원산업진흥원 디지털 콘텐츠 융합 지역맞춤형 기초교육 강사</td>
-                            <td>창원산업진흥원</td>
-                        </tr>
-                        <tr>
-                            <td>2023</td>
-                            <td>울산정보산업진흥원 데이터크리에이터/메타버스크리에이터 양성과정 강사</td>
-                            <td>울산정보산업진흥원</td>
-                        </tr>
-                        <tr>
-                            <td>2022</td>
-                            <td>대웅제약 AppSheet, Apps Script, RDBMS 연동 강사</td>
-                            <td>대웅제약</td>
-                        </tr>
-                        <tr>
-                            <td>2022</td>
-                            <td>대구광역시교육청 예비 고 1 미래역량강화 캠프 운영 강사</td>
-                            <td>대구광역시교육청</td>
-                        </tr>
-                        <tr>
-                            <td>2022</td>
-                            <td>Smart HACCP & Factory 냉온장고 온/습도 제어 App 시연 강사</td>
-                            <td>세미나</td>
-                        </tr>
-                        <tr>
-                            <td>2022</td>
-                            <td>효성 TNS Google Cloud AppSheet Platform 개발 세미나 강사</td>
-                            <td>효성 TNS</td>
-                        </tr>
-                    </tbody>
-                </table>
+        </main>
+        <footer class="bg-dark text-light py-4">
+            <div class="container text-center">
+                <p>&copy; 2025 강진일. All rights reserved.</p>
             </div>
-            <div class="text-center mt-5">
-                <p class="text-muted">더 많은 강의/세미나/저서 활동은 이력서 PDF에서 확인하실 수 있습니다.</p>
-                <a href="resume/이력서_강진일.pdf" class="btn btn-outline-primary" download><i class="bi bi-download me-2"></i>이력서 다운로드</a>
-            </div>
-        </div>
-    </main>
-    <footer class="bg-dark text-light py-4">
-        <div class="container text-center">
-            <p>&copy; 2025 강진일. All rights reserved.</p>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html> 
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
