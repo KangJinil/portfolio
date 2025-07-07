@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>연락처 - 진일의 포트폴리오</title>
-    <meta name="description" content="강진일의 연락처 및 문의 페이지">
-    <meta name="keywords" content="강진일, 연락처, 문의, 이메일, GitHub, LinkedIn">
+    <title>채널 - 진일의 포트폴리오</title>
+    <meta name="description" content="강진일의 소셜 채널 및 연락처">
+    <meta name="keywords" content="강진일, 채널, 소셜, 이메일, GitHub, 블로그, 티스토리">
     <meta name="author" content="강진일">
     <!-- Bootstrap 5.3 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -18,15 +18,39 @@
         .navbar-brand { font-weight: 700; }
         .section-title { position: relative; margin-bottom: 50px; }
         .section-title::after { content: ''; position: absolute; bottom: -10px; left: 0; width: 60px; height: 3px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
-        .contact-btn { min-width: 200px; margin-bottom: 16px; font-size: 1.1em; }
+        .contact-btn { 
+            min-width: 280px; 
+            margin-bottom: 16px; 
+            font-size: 1.1em; 
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         .contact-icon { font-size: 1.5em; margin-right: 10px; }
+        .info-card {
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        .info-card:hover {
+            transform: translateY(-5px);
+        }
+        .blog-btn {
+            background: linear-gradient(135deg, #FF5722 0%, #FF9800 100%);
+            border: none;
+            color: white;
+        }
+        .blog-btn:hover {
+            background: linear-gradient(135deg, #E64A19 0%, #F57C00 100%);
+            color: white;
+        }
     </style>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">강진일</a>
+            <a class="navbar-brand" href="index.html">강진일 포트폴리오</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -37,30 +61,74 @@
                     <li class="nav-item"><a class="nav-link" href="projects.html">프로젝트</a></li>
                     <li class="nav-item"><a class="nav-link" href="skills.html">기술스킬</a></li>
                     <li class="nav-item"><a class="nav-link" href="activities.html">강의/저서</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="contact.html">연락처</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">채널</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <main class="py-5" style="margin-top: 80px;">
         <div class="container">
-            <h2 class="section-title">연락처 / 문의</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-6 text-center">
-                    <a href="mailto:kangji0950@gmail.com" class="btn btn-primary contact-btn" target="_blank">
-                        <i class="bi bi-envelope-fill contact-icon"></i>이메일: kangji0950@gmail.com
-                    </a><br>
-                    <a href="tel:01067670950" class="btn btn-success contact-btn" target="_blank">
-                        <i class="bi bi-telephone-fill contact-icon"></i>전화: 010-6767-0950
-                    </a><br>
-                    <a href="https://github.com/KangJinil" class="btn btn-dark contact-btn" target="_blank">
-                        <i class="bi bi-github contact-icon"></i>GitHub: KangJinil
-                    </a><br>
+            <h2 class="section-title">채널 / 소셜</h2>
+            
+            <!-- 주요 연락처 -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h4 class="mb-4">
+                        <i class="bi bi-envelope display-6 text-success"></i>
+                        <span class="ms-2">주요 연락처</span>
+                    </h4>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <a href="mailto:kangji0950@gmail.com" class="btn btn-primary contact-btn" target="_blank">
+                                <i class="bi bi-envelope-fill contact-icon"></i>이메일: kangji0950@gmail.com
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="tel:01067670950" class="btn btn-success contact-btn" target="_blank">
+                                <i class="bi bi-telephone-fill contact-icon"></i>전화: 010-6767-0950
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="text-center mt-5">
-                <p class="text-muted">이메일 버튼을 클릭하면 메일 앱이 열립니다.<br>더 자세한 정보는 이력서 PDF에서 확인하실 수 있습니다.</p>
-                <a href="resume/이력서_강진일.pdf" class="btn btn-outline-primary" download><i class="bi bi-download me-2"></i>이력서 다운로드</a>
+
+            <!-- 개발자 채널 -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h4 class="mb-4">
+                        <i class="bi bi-code-slash display-6 text-warning"></i>
+                        <span class="ms-2">개발자 채널</span>
+                    </h4>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <a href="https://github.com/KangJinil" class="btn btn-dark contact-btn" target="_blank">
+                                <i class="bi bi-github contact-icon"></i>GitHub
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="https://kcizzang.tistory.com" class="btn blog-btn contact-btn" target="_blank">
+                                <i class="bi bi-journal-text contact-icon"></i>블로그
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SNS 채널 -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h4 class="mb-4">
+                        <i class="bi bi-share display-6 text-primary"></i>
+                        <span class="ms-2">SNS 채널</span>
+                    </h4>
+                    <div class="row g-3">
+                        <div class="col-md-12">
+                            <a href="https://www.facebook.com/kangji0950" class="btn btn-primary contact-btn" target="_blank">
+                                <i class="bi bi-facebook contact-icon"></i>Facebook
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
